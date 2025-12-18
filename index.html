@@ -1,1 +1,124 @@
-<h1>ground loops</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ground Loops Exhibition</title>
+    <style>
+        #header-img {
+            width:100%;
+        }
+        #container {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 800px;
+	width: 90%;
+	background-color: rgba(200,200,200,0.0);
+	padding: 2vh 1vw;
+}
+
+body {
+	margin-top: 2%;
+    background: linear-gradient(108deg, #42ecc0, #d97bb0, #7bbfd9, #eaeff2);
+    background-size: 800% 800%;
+    -webkit-animation: gradient 15s ease infinite;
+    -moz-animation: gradient 15s ease infinite;
+    animation: gradient 15s ease infinite;
+}
+#logos {
+    display:flex;
+    justify-content: space-between;
+}
+#logos img {
+    width: 180px;
+}
+.workshop {
+    margin-top:2vh;
+    border: 2px solid lightblue;
+    padding:2vw;
+    border-radius:2vw;
+}
+.workshop img {
+    display:block;
+    margin: auto;
+    height:30vh;
+}
+
+@-webkit-keyframes gradient {
+    0%{background-position:0% 96%}
+    50%{background-position:100% 5%}
+    100%{background-position:0% 96%}
+}
+@-moz-keyframes gradient {
+    0%{background-position:0% 96%}
+    50%{background-position:100% 5%}
+    100%{background-position:0% 96%}
+}
+@keyframes gradient {
+    0%{background-position:0% 96%}
+    50%{background-position:100% 5%}
+    100%{background-position:0% 96%}
+}
+    </style>
+</head>
+<body>
+<div id="container">
+    <img id="header-img" src="SAW26_Ground Loops_KV_Web_Final.jpg">
+
+    <section id="intro">
+        <p><strong>Ground Loops</strong> is an exhibition and accompanying series of experimental workshops featuring Singapore and New York-based artists and teachers critically engaged with language, archives, and contemporary technologies. Together, artworks intermingle software, dirt, laughter, and pen on paper to suggest possibilities beyond prevailing digital and social codes. Learners are invited to play close to the metal of the machine in three workshops exploring browser-based sound, digital consent, and speculative ‘bug-lore.’</p>
+        
+        <p>Ground Loops is co-presented by <strong>Feelers</strong> and the <strong>School for Poetic Computation</strong> as part of Singapore Art Week 2026. This programme is supported by the National Arts Council and Potato Productions, and hosted by *SCAPE for COMMA Creative Arts Festival 2026.</p>
+    </section>
+
+    <div id="logos" style="margin: 20px 0;">
+        <img src="logos/00_NAC MASTER LOGO-03.jpg"/>
+        <img src="logos/SAW_Black.jpg"/>
+        <img src="logos/SCAPE_logo_RGB-corporate.png"/>
+        <img src="logos/SFPC Logo (Black).png"/>
+    </div>
+
+    <hr>
+
+    <section id="details">
+        <p>
+            <strong>Venue:</strong> The TreeTop, Level 5, *SCAPE, 2 Orchard Link, Singapore 237978<br>
+            <strong>Group Show:</strong> 12pm—7pm, 22—31 Jan<br>
+            <em>Free and open to the public</em>
+        </p>
+        <p>
+            <strong>Exhibition Tour:</strong> 1—2pm, Sun 25 Jan & Sat 31 Jan<br>
+            <em>Free with registration</em>
+        </p>
+        <p>
+            <strong>Workshops:</strong><br>
+            Early Bird Tickets – $25 (Book before 3 Jan and enjoy $5 off the regular price of $30)<br>
+            <strong>Registration Link:</strong> <a href="https://tiny.com/groundloops">tinyurl.com/groundloops</a>
+        </p>
+    </section>
+
+    <section class="workshop">
+        <img src="workshops/tommy.gif" />
+        <h2>🎧 The Musical Web: Gestural Instruments w/ Tommy Martinez</h2>
+        <p><strong>2.30–5.30pm, Sat 24 Jan</strong></p>
+        <p>In this 3 hour workshop students will create interactive browser-based sound works using the p5.sound.js and ml5.js JavaScript libraries. Participants will be introduced to topics in basic synthesis as well as computer vision for motion and skeletal tracking. The class will also cover a brief history of technology as it pertains to the development of new practices in sound art and music. By the end of the workshop students will be able to demonstrate and perform with their own sample-based synthesizer deployed on the web.</p>
+    </section>
+
+    <section class="workshop">
+        <img src="workshops/melanie.jpg" />
+        <h2>🔓 Consensual Hacking w/ Melanie Hoff</h2>
+        <p><strong>2.30–5.30pm, Sun 25 Jan</strong></p>
+        <p>Consensual Hacking is a collective thought experiment and a guided, participatory workshop focused on digital and relational consent. Through conversation, writing, and hands-on computer access, students will explore what it means to give, withhold, or request consent in digital and romantic spaces.</p>
+        <p>Students may choose to engage in a consensual process of hacking into each other’s personal computers—a practice that raises questions around control, vulnerability, and care. What is social and digital consent and how are they interwoven? What does it mean to responsibly give and take access and control to our most intimate digital or physical spaces? Is there pleasure to be found in a bounded exchange of trust and vulnerability?</p>
+        <p>Together, we’ll navigate secure networking protocols and basic uses of the terminal, while also co-creating sociotechnical contracts that express our boundaries and desires towards a loving, secure, and mutual transgression of digital space.</p>
+    </section>
+
+    <section class="workshop">
+        <img src="workshops/ashley.jpg" />
+        <h2>🪲 Bring Your Own Bug Spray w/ Ashley Hi</h2>
+        <p><strong>2.30–5.30pm, Sat 31 Jan</strong></p>
+        <p>A bug refers to an unintentional mistake or error in a computer program or hardware system that causes the system to behave unexpectedly in ways it was not designed to. Like a phantom in a machine, a moth caught in a relay, or a cockroach whispering from a telephone, a bug can be a dreadful haunting or a pleasant surprise.</p>
+        <p>Through a series of speculative writing and coding exercises, participants will contribute to a compendium of bug lore which documents the anxieties around the fear of tech and tech failure through the courage of bug spray.</p>
+    </section>
+</div>
+</body>
+</html>
