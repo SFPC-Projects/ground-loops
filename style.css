@@ -38,7 +38,8 @@
     background-color: rgba(200,200,200,0.0);
     padding: 2vh 1vw;
     margin-top: 2%;
-    flex: 0 0 800px;
+    flex: 1 1 auto;
+    min-width: 0;
 }       
 
 
@@ -76,17 +77,22 @@ strong{
 #left-column,
 #right-column {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex: 0 0 auto;
-    width: auto;
+    max-width: 200px;
+    min-width: 0;
+    align-self: stretch;
 }
 
 #left-column img,
 #right-column img {
     max-width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
 }
 
 
@@ -160,7 +166,7 @@ hr{
 .workshop img {
     display:block;
     margin: auto;
-    height:30vh;
+    height:40vh;
 }
 
 .worskhop p{
@@ -170,25 +176,61 @@ hr{
 /** mobile **/
 @media (max-width: 768px) {
     #main-wrapper {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 10px;
     }
     
     #left-column,
     #right-column {
-        display: none;
+        max-width: 30px;
+        flex: 0 0 30px;
+    }
+
+    #left-column, 
+    #right-column img {
+        max-width: 100%;
+    height: 700px;
+    object-fit: cover;
+    object-position: top;
     }
     
     #container {
         flex: 1 1 auto;
-        width: 90%;
+        width: auto;
         max-width: 100%;
+        padding: 2vh 2vw;
+        min-width: 0;
     }
 
     .registration-button{
-        width: 50%;
+        width: 70%;
     }
     
+    body {
+        font-size: 1.2em;
+    }
+    
+    #logos {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5em;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    #logos img {
+        max-width: 100px;
+        width: auto;
+        flex: 0 1 auto;
+        padding: 15px 1em;
+    }
+
+    .workshop img{
+        width: 100%;
+        object-fit: scale-down;
+        height: auto;
+    }
 }
 
 
