@@ -138,22 +138,26 @@ strong a:hover{
 
 #logos {
     display:flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: var(--lavender-mist);
     box-shadow: 0 0 7px 11px var(--lavender-mist);
     padding: 1em;
-    margin: 2em 0;
-}
+    margin: 2em 0 1em 0;
 
+}
+#logos img {
+    padding: 0.25em 1em;
+    width: 140px;
+    object-fit: scale-down;
+    flex: 0 1 auto;
+
+}
 hr{
     margin-top: 1.5em;
     margin-bottom: 1.2em;
 }
-#logos img {
-    padding: 0px 1em;
-    width: 140px;
-    object-fit: scale-down;
-}
+
 .workshop {
     margin-top:2vh;
     margin-bottom:2em;
